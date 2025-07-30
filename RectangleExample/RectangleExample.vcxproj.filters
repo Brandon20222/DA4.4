@@ -22,6 +22,12 @@
     <Filter Include="Source Files\shapes">
       <UniqueIdentifier>{a4d89fce-504e-42bb-b0c2-30da9ebbf469}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Animals">
+      <UniqueIdentifier>{44ac8e2f-10e4-489f-b692-e4fea9e41e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shape">
+      <UniqueIdentifier>{331642c3-3407-4aa6-be9e-c7587960fc30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainTester.cpp">
@@ -74,50 +80,50 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rectangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Car.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RectangleConsole.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Cat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Dog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Die.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Animal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HuntingDog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GuardDog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Lapdog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mutt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Shape.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Circle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Triangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Vehicle.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Cat.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Dog.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardDog.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntingDog.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Lapdog.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutt.h">
+      <Filter>Header Files\Animals</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Header Files\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleConsole.h">
+      <Filter>Header Files\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Header Files\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files\Shape</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

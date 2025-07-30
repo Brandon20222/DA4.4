@@ -15,15 +15,17 @@ public:
 	Triangle(Triangle& otherTriangle);
 
 	// Getters and setters for base and height and area
-	int getBase();
-	int getHeight();
-	double getArea();
+	int getBase()const;
+	int getHeight()const;
+	double getArea()const;
 	void setBase(int base);
 	void setHeight(int height);
 
 	// equals and << overload
 	Triangle& operator=(Triangle& otherTriangle);
 	friend ostream& operator<<(ostream& strm, Triangle& triangle);
+	std::ostream& draw(std::ostream& strm)const override;
+
 
 
 };

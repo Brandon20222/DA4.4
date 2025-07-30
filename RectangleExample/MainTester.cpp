@@ -3,7 +3,6 @@
 #include "RectangleConsole.h"
 #include "Dog.h"
 #include "Circle.h"
-#include "Rectangle.h"
 #include "Triangle.h"
 #include "Vehicle.h"
 #include "GuardDog.h"
@@ -31,6 +30,16 @@ void displayCat(Cat cat);
 int main()
 {
 
+    int size = 10;
+   Shape* s1 = new Circle(size);
+    Shape* s2 = new Rectangle(size, size);
+    Shape* s3 = new Triangle(size, size);
+   s1->draw(cout);
+    cout << endl;
+    s2->draw(cout);
+    cout << endl;
+   s3->draw(cout);
+    /*
     Dog* myDog = new Lapdog;
 
     if (Animal* a1 = dynamic_cast<Animal*>(myDog))
@@ -42,7 +51,7 @@ int main()
         cout << "It is a Lapdog!" << endl;
     else
         cout << "It is not a Lapdog!" << endl;
-
+        */
 
 
     /*

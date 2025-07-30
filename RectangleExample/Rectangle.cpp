@@ -1,5 +1,6 @@
 #include "Rectangle.h"
 #include <iostream>
+using namespace std;
 
 Rectangle::Rectangle() : Rectangle(1, 1) {}
 
@@ -17,10 +18,10 @@ void Rectangle::setLength(int l) {
 	length = l;
 }
 
-int Rectangle::getLength() {
+int Rectangle::getLength()const {
 	return length;
 }
-int Rectangle::getWidth() {
+int Rectangle::getWidth()const {
 	return width;
 }
 
@@ -43,5 +44,25 @@ std::ostream& operator<<(std::ostream& strm, Rectangle& rect) {
 	strm << "A Rectangle with length: " << rect.getLength() <<
 		", width: " << rect.getWidth() <<
 		" and an area of " << rect.getArea();
+	return strm;
+}
+
+std::ostream& Rectangle::draw(std::ostream& strm)const{
+	// print out the top of the box
+	for (int w = 0; w < getWidth(); w++)
+		strm << "-";
+	strm << endl;
+	// print out the sides of the box
+	for (int l = 0; l < getLength(); l++) {
+		strm << "|";
+		for (int w2 = 1; w2 < getWidth() - 1; w2++)
+			strm << " ";
+		strm << "|" << endl;
+	}
+	// print out the bottom of the box.
+	for (int w = 0; w < getWidth(); w++)
+		strm << "-";
+	strm << endl;
+
 	return strm;
 }

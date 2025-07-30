@@ -18,5 +18,7 @@ public:
     // operator overloads
     Circle& operator=(Circle& otherCircle);
     friend std::ostream& operator<<(std::ostream& strm, Circle& circle);
+    std::ostream& draw(std::ostream& strm)const override;
+
 };
 

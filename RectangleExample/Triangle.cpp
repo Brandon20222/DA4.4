@@ -17,13 +17,13 @@ Triangle::Triangle(Triangle& otherTriangle) {
 }
 
 // Getters and setters for base and height and area
-int Triangle::getBase() {
+int Triangle::getBase()const {
 	return base;
 }
-int Triangle::getHeight() {
+int Triangle::getHeight()const {
 	return height;
 }
-double Triangle::getArea() {
+double Triangle::getArea()const{
 	return .5 * base * height;
 }
 void Triangle::setBase(int base) {
@@ -48,3 +48,22 @@ ostream& operator<<(ostream& strm, Triangle& triangle) {
 		" and an area of " << triangle.getArea();
 	return strm;
 }
+
+std::ostream& Triangle::draw(std::ostream& strm)const {
+	
+	// print out the sides of the box
+	for (int row = 0; row < height; row++) {
+		strm << "|";
+		for (int space = 0; space < row; space++)
+			strm << " ";
+		strm << "\\" << endl;
+	}
+	strm << ' ';
+	// print out the bottom of the box.
+	for (int i = 0; i < base; i++)
+		strm << "-";
+	strm << endl;
+
+	return strm;
+}
+

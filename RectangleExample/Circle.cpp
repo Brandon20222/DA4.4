@@ -35,3 +35,49 @@ std::ostream& operator<<(std::ostream& strm, Circle& circle) {
 		" and an area of " << circle.getArea();
 	return strm;
 }
+
+std::ostream& Circle::draw(std::ostream& strm)const {
+	/*
+	//Top
+	for (int space = 0; space < radius; space++) {
+		strm << " ";
+	}
+	strm << "_" << endl;
+	//Growing sides
+	for (int rad = 0; rad < radius; rad++) {
+		//left side
+		for (int leftSpace = rad; leftSpace < radius - 1;  leftSpace++) {
+			strm << " ";
+		}
+		strm << "/";
+		//middle space
+		for (int middleSpace = 0; middleSpace < rad; middleSpace++)
+			strm << " ";
+		//right side
+		strm << "\\" << endl;
+	}
+	//Middle
+	//Shrinking sides 
+	//Bottom
+	*/
+
+	int radius = 6;
+	int i, j;
+	for (i = 0; i <= 2 * radius; i++)
+	{
+		for (j = 0; j <= 2 * radius; j++)
+		{
+			double distance = sqrt((double)(i - radius) * (i - radius) + (j - radius) * (j - radius));
+			if (distance > radius - 0.65 && distance < radius + 0.2)
+			{
+				strm << "**";
+			}
+			else
+			{
+				strm << "  ";
+			}
+		}
+		strm << std::endl;
+	}
+	return strm;
+}
